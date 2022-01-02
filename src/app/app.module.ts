@@ -3,14 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoreComponent } from './components/lore/lore.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { BannerComponent } from './components/banner/banner.component';
+import { CountdownTimerModule } from './../../projects/countdown-timer/src/lib/countdown-timer.module';
+import { TeamComponent } from './components/team/team.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    LoreComponent,
+    BannerComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    MatGridListModule,
+    CountdownTimerModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
