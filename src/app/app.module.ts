@@ -11,6 +11,9 @@ import { BannerComponent } from './components/banner/banner.component';
 import { CountdownTimerModule } from './../../projects/countdown-timer/src/lib/countdown-timer.module';
 import { TeamComponent } from './components/team/team.component';
 import { NgParticlesModule } from "ng-particles";
+import { ParticlesComponent } from './components/particles/particles.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { NgParticlesModule } from "ng-particles";
     FooterComponent,
     LoreComponent,
     BannerComponent,
-    TeamComponent
+    TeamComponent,
+    ParticlesComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,8 @@ import { NgParticlesModule } from "ng-particles";
     NoopAnimationsModule,
     MatGridListModule,
     CountdownTimerModule,
-    NgParticlesModule
+    NgParticlesModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

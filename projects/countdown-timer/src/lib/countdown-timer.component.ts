@@ -27,6 +27,9 @@ import { map } from 'rxjs/internal/operators/map';
     border-radius: 10px;
     border: 2px solid black;
     margin: 15px;
+
+
+    
   }
   #timer div span {
     color: #ffffff;
@@ -34,7 +37,11 @@ import { map } from 'rxjs/internal/operators/map';
     margin-top: 15px;
     font-size: .35em;
     font-weight: 400;
-  }`],
+  }
+  
+  
+  
+  `],
 })
 export class CountdownTimerComponent implements OnInit {
   time!: {
