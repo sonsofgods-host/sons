@@ -1,3 +1,19 @@
 h1 {
     text-align: center;
 }
+
+.mat-grid-tile-content {
+    display: flex;
+    flex-direction: column;
+    /* or inline-block, at least its a block element */
+    width: 20px;
+    /* or width is certain by parent element */
+    height: auto;
+    /* height cannot be defined */
+    word-break: break-all;
+    /*  */
+    word-wrap: break-word;
+    /* if you want to cut the complete word */
+    white-space: normal;
+    /* be sure its not 'nowrap'! ! ! :/ */
+}
