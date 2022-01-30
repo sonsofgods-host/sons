@@ -1,8 +1,19 @@
 <div class="banner_container">
-    <div class="logoBanner">
-        <img src="../../../assets/testbanner.png" />
-    </div>
-    <div class="timeCounter">
+    <mat-grid-list cols="2" >
+        <mat-grid-tile>
+            <div class="logoBanner">
+                <img src="../../../assets/bannerzeus.png" />
+            </div>
+            
+        </mat-grid-tile>
+    
+        <mat-grid-tile>
+            <div class="timeCounter">
                 <ctimer-countdown-timer [finishDateString]="'2022-02-28 21:09:09'"></ctimer-countdown-timer>
-    </div>
+         </div>
+    
+        </mat-grid-tile>
+    
+    </mat-grid-list>
+    
 </div>

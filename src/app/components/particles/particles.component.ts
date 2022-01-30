@@ -16,7 +16,7 @@ export class ParticlesComponent {
   /* or the classic JavaScript object */
   particlesOptions : ISourceOptions  = {
     "fullScreen":{
-      "zIndex":1
+      "zIndex":0
    },
     "particles": {
       "number": {

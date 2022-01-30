@@ -14,6 +14,7 @@ import { NgParticlesModule } from "ng-particles";
 import { ParticlesComponent } from './components/particles/particles.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { SwiperModule } from 'swiper/angular';
+import { RoadmapComponent } from './components/roadmap/roadmap.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SwiperModule } from 'swiper/angular';
     BannerComponent,
     TeamComponent,
     ParticlesComponent,
-    GalleryComponent
+    GalleryComponent,
+    RoadmapComponent
   ],
   imports: [
     BrowserModule,

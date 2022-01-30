@@ -31,12 +31,46 @@ body {
     color: white;
 }
 
-#timer{
-    transform:translatex(720px) translatey(-794px);
-   }
-
+/* Timer */
+   
 #timer div{
     background-color:rgba(0,0,0,0) !important;
     border-color:rgba(84,27,27,0) !important;
+    
 }
+
+.banner_container div img{
+     filter:brightness(0.89) contrast(1.28) saturate(0);
+    z-index: 1000;
+   }
+
+   app-root app-lore .swiper-slide{
+    text-align:justify;
+    width:274px !important;
+    overflow:visible;
+    padding-right:0px;
+   }
+
+   app-root app-lore .swiper-wrapper{
+    width:0px;
+    padding-left:200px;
+    padding-right:200px;
+    padding-top:0px;
+   }
+
+   app-root app-lore .swiper-button-next{
+    color:#ffffff;
+   }
+
+   app-root app-lore .swiper-button-prev{
+    color:#ffffff;
+   }
+
+   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+       background-color: white;
+   }
+
+   app-root app-lore .swiper-pointer-events{
+    background-color:rgba(0,0,0,0.77);
+   }
    
