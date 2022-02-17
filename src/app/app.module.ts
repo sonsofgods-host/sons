@@ -6,7 +6,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoreComponent } from './components/lore/lore.component';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { BannerComponent } from './components/banner/banner.component';
 import { CountdownTimerModule } from './../../projects/countdown-timer/src/lib/countdown-timer.module';
 import { TeamComponent } from './components/team/team.component';
@@ -15,6 +15,7 @@ import { ParticlesComponent } from './components/particles/particles.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { SwiperModule } from 'swiper/angular';
 import { RoadmapComponent } from './components/roadmap/roadmap.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RoadmapComponent } from './components/roadmap/roadmap.component';
     TeamComponent,
     ParticlesComponent,
     GalleryComponent,
-    RoadmapComponent
+    RoadmapComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
