@@ -16,7 +16,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { SwiperModule } from 'swiper/angular';
 import { RoadmapComponent } from './components/roadmap/roadmap.component';
 import { FaqComponent } from './components/faq/faq.component';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,10 @@ import { FaqComponent } from './components/faq/faq.component';
     MatGridListModule,
     CountdownTimerModule,
     NgParticlesModule,
-    SwiperModule
+    MatToolbarModule,
+    MatExpansionModule,
+    SwiperModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
