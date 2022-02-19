@@ -40,7 +40,10 @@ body {
 }
 
 .banner_container div img{
-     filter:brightness(0.89) contrast(1.28) saturate(0);
+     
+     position:relative;
+     top:-9px;
+     filter: brightness(0.89) contrast(1.28) saturate(0.96);
     z-index: 1000;
    }
 
@@ -79,3 +82,10 @@ body {
     font-style:normal;
     text-shadow:rgb(100,50, 50) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 255, 255) 0px 0px 6px, rgb(198, 178, 32) 0px 0px 8px, rgb(198, 178, 32) 0px 0px 12px, rgb(198, 178, 32) 0px 0px 16px, rgb(198, 178, 32) 0px 0px 20px, rgb(198, 178, 32) 0px 0px 24px;
    }
+
+   /* Image */
+   app-root app-banner .banner_container .mat-grid-list div .mat-grid-tile .mat-grid-tile-content .logoBanner img{
+    width:1026px !important;
+   }
+   
+   

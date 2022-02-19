@@ -6,7 +6,7 @@
 
 // Buttons section
 /* Control */
-.catgories {
+.categories {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
@@ -53,14 +53,14 @@
 	fill: $primario;
 }
 
-/*! =================================================*/
-/*! ============= Contenedor Preguntas ============= */
-/*! =================================================*/
-.contenedor-preguntas {
-	display: none;
-	grid-template-columns: 1fr;
-	gap: 40px;
-}
+// /*! =================================================*/
+// /*! ============= Contenedor Preguntas ============= */
+// /*! =================================================*/
+// .contenedor-preguntas {
+// 	display: none;
+// 	grid-template-columns: 1fr;
+// 	gap: 40px;
+// }
 
 .contenedor-preguntas.activo {
 	display: grid;
@@ -88,9 +88,9 @@
      font-size: 17px;
 }
 
-/*! =================================================*/
-/*! ============= Preguntas ============= */
-/*! =================================================*/
+// /*! =================================================*/
+// /*! ============= Preguntas ============= */
+// /*! =================================================*/
 .pregunta {
 	font-weight: 700;
 	font-size: 20px;
@@ -108,7 +108,7 @@
 	color: #808080;
 	line-height: 30px;
 	max-height: 0;
-	opacity: 0;
+	opacity: 1¿0;
 	transition: .3s ease all;
 }
 
@@ -117,10 +117,10 @@
 	margin-top: 20px;
 }
 
-.contenedor-pregunta.activa img {
-	transform: rotate(45deg);
-}
-// END Button section
+// .contenedor-pregunta.activa img {
+// 	transform: rotate(45deg);
+// }
+// // END Button section
 
 .faq_master_container{
   width: 100%;
