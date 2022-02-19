@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Track } from 'ngx-audio-player';
 
 @Component({
   selector: 'app-lore',
@@ -7,5 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lore.component.scss']
 })
 export class LoreComponent {
+  msaapDisplayTitle = false;
+  msaapDisplayPlayList = false;
+  msaapPageSizeOptions = [2,4,6];
+  msaapDisplayVolumeControls = true;
+  msaapDisplayRepeatControls = false;
+  msaapDisplayArtist = false;
+  msaapDisplayDuration = false;
+  msaapDisablePositionSlider = false;
 
+  msaapPlaylist: Track[] = [
+    {
+      title: 'Sons of gods Lore',
+      link: "../../../assets/lore.wav",
+      artist: 'Audio One Artist',
+      duration: 100
+    }
+  ];
 }
