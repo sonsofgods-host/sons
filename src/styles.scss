@@ -119,3 +119,98 @@ app-root
   img {
   width: 1026px !important;
 }
+
+
+// Player //
+
+
+.mat-slider-focus-ring{
+  background-color: #00ff00 !important;
+}
+
+.ngx-audio-player{
+  color: #000000 !important;
+  background-color: #000000 !important;
+}
+.player_container .player .player_back{
+  background-color:#c20000;
+ }
+ 
+ .ngx-col[_ngcontent-ndj-c170]{
+  background-color:#000000 !important;
+  color: #000000 !important;
+}
+/* Mat slider horizontal */
+.mat-card .ngx-col .ngx-flex-fill .mat-slider{
+  background-color:#000000;
+ }
+ 
+ /* Mat slider wrapper */
+ .ngx-col .ngx-flex .mat-slider-wrapper{
+  background-color:#ffffff;
+ }
+ 
+ /* Material icons */
+ .ngx-audio-player .mat-button-base .material-icons{
+  color:rgba(255,255,255,0.87);
+ }
+ 
+ /* Mat button base */
+ #master app-lore .mat-button-base{
+  background-color:#000000;
+ }
+ 
+ /* Audio player */
+ #master app-lore .ngx-audio-player{
+  background-color:#000000;
+ }
+ 
+ /* Block */
+ .ngx-col .ngx-flex-fill .ngx-d-sm-block{
+  transform:translatex(0px) translatey(0px) !important;
+ }
+ 
+ /* Span Tag */
+ .ngx-col .ngx-d-sm-block span{
+  color:rgba(255,255,255,0.87);
+ }
+ 
+ /* Division */
+ .ngx-col .ngx-flex-fill .ngx-py-3{
+  color:rgba(255,255,255,0.87);
+ }  
+
+ /* Mat slider wrapper */
+.ngx-col .ngx-flex-fill .mat-slider-wrapper{
+  background-color:#9e9e9e;
+ }
+ 
+ /* Mat slider thumb */
+ .mat-slider-wrapper .mat-slider-thumb{
+  background-color: #bca91f;
+  box-shadow:0px 0px 29px 6px #fede75;
+ }
+ 
+ /* Mat slider track fill */
+ .mat-slider-wrapper .mat-slider-track-wrapper .mat-slider-track-fill{
+  background-color: #bca91f;
+  box-shadow:0px 0px 29px 6px #fede75;
+ }
+ 
+ .mat-slider-wrapper .mat-slider-thumb{
+  background-color: #bca91f !important;
+  box-shadow:0px 0px 29px 6px #fede75 !important;
+ }
+ 
+ #master .player .ngx-audio-player{
+  border-color:#bca91f;
+  border-style:solid;
+  border-width:0.5px;
+  border-top-left-radius:23px;
+  border-top-right-radius:23px;
+  border-bottom-left-radius:23px;
+  border-bottom-right-radius:23px;
+ }
+
+ 
+// END Player //

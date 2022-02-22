@@ -21,6 +21,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { LoaderComponent } from './components/loader/loader.component';
 import { NgxAudioPlayerModule } from 'ngx-audio-player';
+import { GodsComponent } from './components/gods/gods.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NgxAudioPlayerModule } from 'ngx-audio-player';
     GalleryComponent,
     RoadmapComponent,
     FaqComponent,
-    LoaderComponent
+    LoaderComponent,
+    GodsComponent
   ],
   imports: [
     BrowserModule,
