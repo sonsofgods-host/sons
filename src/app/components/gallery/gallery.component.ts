@@ -1,5 +1,4 @@
-import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
-import { SwiperComponent } from "swiper/angular";
+import { Component, ViewEncapsulation } from "@angular/core";
 import SwiperCore, { Zoom, Navigation, Pagination } from "swiper";
 
 SwiperCore.use([Zoom, Navigation, Pagination]);
@@ -12,6 +11,7 @@ SwiperCore.use([Zoom, Navigation, Pagination]);
     styleUrls: ['./gallery.component.scss'],
     encapsulation: ViewEncapsulation.None
   })
+
   export class GalleryComponent  {
   
     constructor() { }

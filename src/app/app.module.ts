@@ -19,6 +19,9 @@ import { FaqComponent } from './components/faq/faq.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { LoaderComponent } from './components/loader/loader.component';
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,8 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
     ParticlesComponent,
     GalleryComponent,
     RoadmapComponent,
-    FaqComponent
+    FaqComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,8 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
     MatToolbarModule,
     MatExpansionModule,
     SwiperModule,
-    ButtonModule
+    ButtonModule,
+    NgxAudioPlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

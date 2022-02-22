@@ -1,3 +1,27 @@
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+.master_container{
+    opacity: 0;
+    z-index: -10000;
+}
 
+.show {
+    opacity: 1;   
+    transition: visibility 0s, opacity 0.2s linear;
+}
+
+.notShow{
+    opacity: 0;
+    transition: visibility 0s, opacity 1s linear;
+    z-index: -10000;
+}
+
+.notShowFast{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+.ShowFast{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.2s linear;
+}

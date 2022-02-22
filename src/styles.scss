@@ -1,8 +1,8 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '~@angular/material' as mat;
-@import '../../SonsOfGodsWeb/node_modules/swiper/swiper.min.css';
-@import '../../SonsOfGodsWeb/node_modules/swiper/swiper-bundle.min.css';
+@use "~@angular/material" as mat;
+@import "../../SonsOfGodsWeb/node_modules/swiper/swiper.min.css";
+@import "../../SonsOfGodsWeb/node_modules/swiper/swiper-bundle.min.css";
 // Plus imports for other components in your app.
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -17,7 +17,15 @@ $sons-of-gods-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 $sons-of-gods-warn: mat.define-palette(mat.$red-palette);
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$sons-of-gods-theme: mat.define-light-theme(( color: ( primary: $sons-of-gods-primary, accent: $sons-of-gods-accent, warn: $sons-of-gods-warn, )));
+$sons-of-gods-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $sons-of-gods-primary,
+      accent: $sons-of-gods-accent,
+      warn: $sons-of-gods-warn,
+    ),
+  )
+);
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
@@ -26,56 +34,88 @@ $sons-of-gods-theme: mat.define-light-theme(( color: ( primary: $sons-of-gods-pr
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    background-color: black;
-    margin: 0 !important;
-    color: white;
+  background-color: black;
+  margin: 0 !important;
+  color: white;
 }
 
 /* Timer */
-   
-#timer div{
-    background-color:rgba(0,0,0,0) !important;
-    border-color:rgba(84,27,27,0) !important;
-    
+
+#timer div {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(84, 27, 27, 0) !important;
 }
 
-.banner_container div img{
-     filter:brightness(0.89) contrast(1.28) saturate(0);
-    z-index: 1000;
-   }
+.banner_container div img {
+  position: relative;
+  top: -9px;
+  filter: brightness(0.89) contrast(1.28) saturate(0.96);
+  z-index: 1000;
+}
 
-   app-root app-lore .swiper-slide{
-    text-align:justify;
-    width:274px !important;
-    overflow:visible;
-    padding-right:0px;
-   }
+@import url("//fonts.googleapis.com/css2?family=Caesar+Dressing:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-   app-root app-lore .swiper-wrapper{
-    width:0px;
-    padding-left:200px;
-    padding-right:200px;
-    padding-top:0px;
-   }
+app-root app-lore .swiper-slide {
+  text-align: justify;
+  width: 700px !important;
+  overflow: visible;
+  padding-right: 0px;
 
-   app-root app-lore .swiper-button-next{
-    color:#ffffff;
-   }
+  text-align: center;
+  font-family: "Caesar Dressing", display;
+  font-size: 18px;
+  line-height: 24.6px;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1.9px;
+  word-spacing: 3px;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
+  color: #ffffff;
+}
 
-   app-root app-lore .swiper-button-prev{
-    color:#ffffff;
-   }
+app-root app-lore .swiper-wrapper {
+  width: 0px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 0px;
+}
 
-   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
-       background-color: white;
-   }
+app-root app-lore .swiper-button-next {
+  color: #ffffff;
+}
 
-   app-root app-lore .swiper-pointer-events{
-    background-color:rgba(0,0,0,0.77);
-   }
-   
-   #timer{
-    font-family:'Roboto', sans-serif;
-    font-style:normal;
-    text-shadow:rgb(100,50, 50) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 255, 255) 0px 0px 6px, rgb(198, 178, 32) 0px 0px 8px, rgb(198, 178, 32) 0px 0px 12px, rgb(198, 178, 32) 0px 0px 16px, rgb(198, 178, 32) 0px 0px 20px, rgb(198, 178, 32) 0px 0px 24px;
-   }
+app-root app-lore .swiper-button-prev {
+  color: #ffffff;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: white;
+}
+
+app-root app-lore .swiper-pointer-events {
+  background-color: rgba(0, 0, 0, 0.77);
+}
+
+#timer {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-shadow: rgb(100, 50, 50) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px,
+    rgb(255, 255, 255) 0px 0px 6px, rgb(198, 178, 32) 0px 0px 8px,
+    rgb(198, 178, 32) 0px 0px 12px, rgb(198, 178, 32) 0px 0px 16px,
+    rgb(198, 178, 32) 0px 0px 20px, rgb(198, 178, 32) 0px 0px 24px;
+}
+
+/* Image */
+app-root
+  app-banner
+  .banner_container
+  .mat-grid-list
+  div
+  .mat-grid-tile
+  .mat-grid-tile-content
+  .logoBanner
+  img {
+  width: 1026px !important;
+}

@@ -1,30 +1,74 @@
-<swiper [navigation]="true" class="mySwiper"
-[slidesPerView]="'auto'"
-    [spaceBetween]="600"
+<div class="lore_master_container">
+  <h2 class="title">Lore</h2>
+
+  <swiper
+    [navigation]="true"
+    class="mySwiper"
+    [slidesPerView]="1"
+    [spaceBetween]="200"
     [pagination]="{
-        clickable: true
-      }">
-    <ng-template swiperSlide id="carta"> Al comienzo, todo el espacio tiempo era caos.
-        Nuestro universo fue forjado por un evento hasta el momento indescifrable. Éste desprendió la suficiente energía
-        para idear a doce deidades diferentes. Fue así como nacieron los doce grandes creadores.
-        Estos seres de incalculable poder, ambiguos rasgos físicos y una inteligencia capaz de lograr lo inimaginable, fueron
-        lo que comenzaron nuestra historia. Los doce grandes vagaban sin una razón de ser por las diferentes galaxias, no
-        tenían objetivos, solo contaban con ellos mismos, el aburrimiento y la soledad. Fueron estos sentimientos los que
-        despertaron el interés de organizarse, crearon nuestro sistema planetario y se enfocaron en nuestro mundo.</ng-template
-    ><ng-template swiperSlide>En una
-        primera instancia crearon a los humanos, los organizaron en forma pacífica y los dividieron en doce grandes
-        civilizaciones diferentes. Organizaron el tiempo, definieron criterios y límites del mismo. A su vez, cada uno de ellos
-        se adjudicó dimensiones, sentimientos y magnitudes únicas. Uno de ellos se apoderó del miedo, otro del tiempo. El ego
-        también fue seleccionado, al igual que el orden y el destino. Pero no todas las deidades primordiales revelaron su
-        cualidad, estas se mantuvieron en total secreto y hasta el día de hoy se desconoce sobre ellas.
-        Este acuerdo es conocido hasta el día de hoy como el juramento universal.</ng-template
-    ><ng-template swiperSlide>Slide 3</ng-template
-    ><ng-template swiperSlide>Slide 4</ng-template
-    ><ng-template swiperSlide>Slide 5</ng-template
-    ><ng-template swiperSlide>Slide 6</ng-template
-    ><ng-template swiperSlide>Slide 7</ng-template
-    ><ng-template swiperSlide>Slide 8</ng-template
-    ><ng-template swiperSlide>Slide 9</ng-template>
+      clickable: true
+    }"
+  >
+    <ng-template swiperSlide id="carta">
+      Al comienzo, todo el espacio tiempo era caos. Nuestro universo fue forjado
+      por un evento hasta el momento indescifrable. Éste desprendió la
+      suficiente energía para forjar a diez deidades diferentes. Fue así como
+      nacieron los diez grandes creadores. Estos seres de incalculable poder,
+      ambiguos rasgos físicos y una inteligencia capaz de lograr lo
+      inimaginable, fueron lo que comenzaron nuestra historia. Los diez grandes
+      vagaban sin una razón de ser por las diferentes galaxias, no tenían
+      objetivos, solo contaban con ellos mismos, el aburrimiento y la soledad.
+      Fueron estos sentimientos los que despertaron el interés de organizarse,
+      crearon nuestro sistema planetario y se enfocaron en nuestro mundo. En una
+      primera instancia crearon a los humanos, los organizaron en forma pacífica
+      y los dividieron en diez grandes civilizaciones diferentes. Organizaron el
+      tiempo, definieron criterios y límites del mismo. A su vez, cada uno de
+      ellos se adjudicó dimensiones, sentimientos y magnitudes únicas. Uno de
+      ellos se apoderó del miedo, otro del tiempo. La temperatura y la soberbia
+      también fueron seleccionadas, al igual que el orden y el destino. Pero no
+      todas las deidades primordiales revelaron su cualidad, estas se
+      mantuvieron en total secreto y hasta el día de hoy se desconoce sobre
+      ellas. Este acuerdo es conocido hasta el día de hoy como el juramento
+      universal.</ng-template
+    ><ng-template swiperSlide
+      >Nuestras tierras fueron habitadas en su totalidad. Cada civilización
+      respetó el pacto durante siglos, lo que permitió localizarse y expandirse
+      de forma pacífica. Estas eran muy similares entre sí, solo los
+      diferenciaba la demografía. Funcionaban cíclicamente de igual forma y esto
+      a lo largo del tiempo empezó a aburrir a las deidades. En un nuevo pacto,
+      los creadores acordaron renunciar a su poder absoluto y otorgar a los
+      humanos el libre albedrío. Los nuevos humanos, ante esta nueva libertad
+      asumieron como propias las diferentes dimensiones, sentimientos y
+      magnitudes. El amor, el odio y la fe cambiaron completamente su
+      naturaleza. Estas últimas tres fueron las que dieron comienzo a los
+      conflictos transformando a las pacificas civilizaciones en imperios de
+      gran temer. La fe de los humanos les permitió acceder a nuevas deidades de
+      diferentes características y poderes, convirtiendo al destino en el
+      concepto más poderoso de todos. Cada uno de los imperios intermedió su fe
+      en un símbolo y este significó la razón por la cual vivir. Al cabo de un
+      tiempo, estos nuevos dioses desplazaron a los grandes creadores y hasta el
+      día de hoy se desconoce su paradero. El juramento universal tal como lo
+      conocíamos ya no existe. ¿Estás listo para arriesgar tu fe? Sumérgete en
+      la historia y conviértete en un hijo de los dioses</ng-template
+    >
   </swiper>
 
-  
+  <div class="player_container">
+    <ngx-audio-player
+      class="player"
+      [playlist]="msaapPlaylist"
+      [displayTitle]="msaapDisplayTitle"
+      [autoPlay]="false"
+      muted="muted"
+      [displayPlaylist]="msaapDisplayPlayList"
+      [pageSizeOptions]="msaapPageSizeOptions"
+      [displayArtist]="msaapDisplayArtist"
+      [displayDuration]="msaapDisplayDuration"
+      [expanded]="false"
+      [displayVolumeControls]="msaapDisplayVolumeControls"
+      [displayRepeatControls]="msaapDisplayRepeatControls"
+      [disablePositionSlider]="msaapDisablePositionSlider"
+    ></ngx-audio-player>
+  </div>
+</div>
