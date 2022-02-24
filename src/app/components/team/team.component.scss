@@ -1,5 +1,5 @@
 .team_master_container {
-  margin-top: 139px;
+  margin-top: 200px;
 }
 
 .mat-grid-tile a {
@@ -24,6 +24,7 @@
   transform: scale(1.05);
   transition: transform 0.3s, filter 0.3s;
   filter: brightness(1.79) contrast(0.94) hue-rotate(10deg) saturate(1.39);
+  cursor:pointer;
 }
 
 .mat-grid-list .underPic_container {
@@ -31,6 +32,11 @@
   justify-content: center !important;
   align-items: center !important;
   flex-direction: column !important;
+  width:214px;
+}
+
+.titles_container{  
+  height:114px;
 }
 
 .profileInfo{
@@ -39,8 +45,11 @@
 
 .profileInfo .insta_container {
   display: flex;
-  justify-content: center;
   align-items: center;
+
+  float:right;
+  justify-content:flex-end;
+  padding-right:12px;
 }
 
 .team_master_container p {
@@ -51,42 +60,41 @@
 }
 
 .team_master_container a .insta {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   filter: brightness(100) saturate(100) !important;
   border-top-left-radius: 15px !important;
   border-top-right-radius: 15px !important;
   border-bottom-left-radius: 15px !important;
   border-bottom-right-radius: 15px !important;
-  transition: filter 4s;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .team_master_container a .insta:hover {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   filter: brightness(100) saturate(100) !important;
-  box-shadow: 0px 4px 28px -2px #e9d885 !important;
-  transition: filter 4s;
+  box-shadow: 0px 4px 28px -2px #ffd500 !important;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor:pointer;
 }
 
 .team_master_container a .twitter {
-  height: 50px;
-  width: 50px;
-  filter: brightness(100) saturate(100) !important;
-  border-top-left-radius: 15px !important;
-  border-top-right-radius: 15px !important;
-  border-bottom-left-radius: 15px !important;
-  border-bottom-right-radius: 15px !important;
-  transition: filter 4s;
-  background-color: white;
+  height: 40px;
+  width: 40px;
+  background-color: white; 
+  border-style:solid;
+  border-width: 1px !important;
+  border-color: white;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .team_master_container a .twitter:hover {
-  height: 50px;
-  width: 50px;
-  filter: brightness(100) saturate(100) !important;
-  box-shadow: 0px 4px 28px -2px #e9d885 !important;
-  transition: filter 4s;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0px 4px 28px -2px #ffd500 !important;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor:pointer;
 }
 
 
