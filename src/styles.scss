@@ -39,6 +39,23 @@ body {
   color: white;
 }
 
+@import url("//fonts.googleapis.com/css2?family=Cinzel+Decorative:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+// TITLES //
+
+.title {
+  position: relative;
+  bottom: 29px;
+  text-align: center;
+  font-family:'Cinzel Decorative', display;
+  text-shadow:none !important;
+  letter-spacing: 4px;
+  color: #e9d885;
+  font-weight:600;
+  font-size:45px !important;
+}
+
+// END TITLES //
 /* Timer */
 
 #timer div {
@@ -53,7 +70,17 @@ body {
   z-index: 1000;
 }
 
+@import url("//fonts.googleapis.com/css2?family=Cinzel+Decorative:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("//fonts.googleapis.com/css2?family=Caesar+Dressing:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+
+/* Swiper slide active */
+.lore_master_container .swiper-wrapper .swiper-slide{
+ font-family:'Cinzel Decorative', display;
+ font-size:16px;
+ line-height:1.4em;
+ font-style:normal;
+}
 
 app-root app-lore .swiper-slide {
   text-align: justify;
@@ -214,3 +241,4 @@ app-root
 
  
 // END Player //
+

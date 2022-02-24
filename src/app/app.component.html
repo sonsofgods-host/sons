@@ -1,9 +1,11 @@
 <app-loader id="loader_div" class="" *ngIf="isShowing"> </app-loader>
-<app-header id="head" class="notShow"> </app-header>
+<app-header id="head" class="notShow" #header> </app-header>
 <div id="master" class="master_container">
   <app-particles> </app-particles>
-  <app-banner> </app-banner>
-  <app-gallery> </app-gallery>
+  <app-banner #imageFirst> </app-banner>
+  <section #secondSection>
+    <app-gallery> </app-gallery>
+  </section>
   <app-lore> </app-lore>
   <app-roadmap> </app-roadmap>
   <app-gods> </app-gods>

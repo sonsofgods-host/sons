@@ -132,17 +132,6 @@ $sombra: 0 0 13px 0 rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0);
 }
 
-.title { 
-    position:relative;
-    bottom:29px;
-    text-align:center;
-    font-family:'Caesar Dressing', display;
-    text-transform:capitalize;
-    text-shadow:rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px, rgb(255, 255, 255) 0px 0px 6px, #e9d885 0px 0px 8px, #e9d885 0px 0px 12px, #e9d885 0px 0px 16px, #e9d885 0px 0px 20px, #e9d885 0px 0px 24px;
-    letter-spacing:4px;
-    color:#000000;
-}
-
 .faq_container {
   margin-left: 15%;
   margin-right: 15%;
@@ -153,6 +142,7 @@ $sombra: 0 0 13px 0 rgb(255, 255, 255);
   margin-left: 250px;
   margin-right: 250px;
 }
+
 .mat-expansion-panel-header-title {
   color: rgb(255, 255, 255);
 }
