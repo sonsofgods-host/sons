@@ -1,20 +1,31 @@
-.logoBanner img
-{ width:1063px !important;
-height: auto;
-margin-top: 100px;}
-
-.logoBanner{
-    z-index: 0;
+.mat-grid-tile {
+  width: 100%;
 }
 
-.row{
-    position: absolute;
-    z-index: 50;
+.mat-grid-tile-content {
+  width: 100%;
 }
 
-
-.timeCounter{
-    margin-top: 15%;
-    overflow: hidden;
+.logoBanner img {
+  height: auto;
+  margin-top: 100px;
+  width: 100%;
+  z-index: 50;
+  z-index: -10;
+  width:1748px;
+  border: solid rgba(#000, 0.2);
 }
 
+.logoBanner {
+  z-index: 0;
+}
+
+.row {
+  position: absolute;
+  z-index: 50;
+}
+
+.timeCounter {
+  z-index: 1000000000;
+  transform: translatex(650px) translatey(-300px);
+}

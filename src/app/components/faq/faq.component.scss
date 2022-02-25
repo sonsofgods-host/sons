@@ -52,44 +52,49 @@ $sombra: 0 0 13px 0 rgb(255, 255, 255);
 }
 
 // /*! =================================================*/
-// /*! ============= Contenedor Preguntas ============= */
+// /*! ============= Contenedor question ============= */
 // /*! =================================================*/
-// .contenedor-preguntas {
+// .question_container {
 // 	display: none;
 // 	grid-template-columns: 1fr;
 // 	gap: 40px;
 // }
 
-.contenedor-preguntas.activo {
+.question_container.activo {
   display: grid;
 }
 
-.contenedor-pregunta {
+.container_answer {
   background: rgba(0, 0, 0, 0);
-  padding: 40px;
+  padding: 10px;
   border: 2px solid transparent;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.3s ease all;
+  transition: 0.5s ease all;
   cursor: pointer;
+  height: 50px;
 }
 
-.contenedor-pregunta:hover {
+.container_answer:hover {
   box-shadow: $sombra;
 }
 
-.contenedor-pregunta.activa {
+.container_answer.activa {
   border: 2px solid $primario;
 }
 
-.contenedor-pregunta p {
+.container_answer p {
   font-size: 17px;
 }
 
+.container_answer img{
+	transform: rotate(0deg);
+  transition: 0.5s ease all;
+}
 // /*! =================================================*/
-// /*! ============= Preguntas ============= */
+// /*! ============= question ============= */
 // /*! =================================================*/
-.pregunta {
+.question {
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -98,27 +103,33 @@ $sombra: 0 0 13px 0 rgb(255, 255, 255);
   align-items: center;
 }
 
-.pregunta img {
+.question img {
   width: 14px;
 }
 
-.respuesta {
+.answer {
   color: #808080;
   line-height: 30px;
   max-height: 0;
-  opacity: 1¿0;
-  transition: 0.3s ease all;
+  opacity: 0;
+  transition: 0.5s ease all;
 }
 
-.contenedor-pregunta.activa .respuesta {
+.show_answer_container {
+  height: 100px;
+  transition: 0.5s ease all;
+}
+
+.show_answer{
   opacity: 1;
-  margin-top: 20px;
+  transition: 0.5s ease all;
 }
 
-// .contenedor-pregunta.activa img {
-// 	transform: rotate(45deg);
-// }
-// // END Button section
+.show_answer_container img {
+	transform: rotate(45deg);
+  transition: 0.5s ease all;
+}
+// END Button section
 
 .faq_master_container {
   margin-top: 200px;
