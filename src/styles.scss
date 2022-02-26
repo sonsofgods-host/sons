@@ -141,9 +141,12 @@ app-root app-lore .swiper-pointer-events {
     rgb(255, 255, 255) 0px 0px 6px, rgb(198, 178, 32) 0px 0px 8px,
     rgb(198, 178, 32) 0px 0px 12px, rgb(198, 178, 32) 0px 0px 16px,
     rgb(198, 178, 32) 0px 0px 20px, rgb(198, 178, 32) 0px 0px 24px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -15px;
+  font-size: 41px !important;
 }
 
 /* Division */
