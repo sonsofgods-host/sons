@@ -2,6 +2,27 @@
   width: 100%;
 }
 
+.banner_content_container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 17%;
+  height: max-content !important;
+}
+
+.logo_banner_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -43px;
+}
+
+.logo_img {
+  width: 23% !important;
+  height: 13% !important;
+}
+
 .mat-grid-tile {
   width: 100%;
 }
@@ -10,7 +31,7 @@
   width: 100%;
 }
 
-.banner_container img {
+.banner_container .banner {
   height: auto;
   margin-top: 100px;
   width: 100% !important;
@@ -28,6 +49,5 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -350px;
   z-index: 50;
 }

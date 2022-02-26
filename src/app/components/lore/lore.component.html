@@ -4,13 +4,14 @@
   <swiper
     [navigation]="true"
     class="mySwiper"
-    [slidesPerView]="1"
-    [spaceBetween]="200"
+    [slidesPerView]="2"
+    [spaceBetween]="100"
     [pagination]="{
       clickable: true
     }"
+    [scrollbar]="{ draggable: true }"
   >
-    <ng-template swiperSlide id="carta">
+    <ng-template swiperSlide>
       Al comienzo, todo el espacio tiempo era caos. Nuestro universo fue forjado
       por un evento hasta el momento indescifrable. Éste desprendió la
       suficiente energíapara idear a doce deidades diferentes. Fue así como
@@ -18,9 +19,11 @@
       ambiguos rasgos físicos y una inteligencia capaz de lograr lo
       inimaginable, fueronlo que comenzaron nuestra historia. Los doce grandes
       vagaban sin una razón de ser por las diferentes galaxias, notenían
-      objetivos, solo contaban con ellos mismos, el aburrimiento y la soledad.
-      Fueron estos sentimientos los quedespertaron el interés de organizarse,
-      crearon nuestro sistema planetario y se enfocaron en nuestro mundo. En
+      objetivos, solo contaban con ellos mismos, el aburrimiento y la
+      soledad. Fueron estos sentimientos los quedespertaron el interés de organizarse,
+      crearon nuestro sistema planetario y se enfocaron en nuestro mundo.</ng-template
+    >
+    <ng-template swiperSlide> En
       unaprimera instancia crearon a los humanos, los organizaron en forma
       pacífica y los dividieron en doce grandescivilizaciones diferentes.
       Organizaron el tiempo, definieron criterios y límites del mismo. A su vez,
@@ -30,7 +33,8 @@
       deidades primordiales revelaron sucualidad, estas se mantuvieron en total
       secreto y hasta el día de hoy se desconoce sobre ellas. Este acuerdo es
       conocido hasta el día de hoy como el juramento universal.</ng-template
-    ><ng-template swiperSlide
+    >
+    <ng-template swiperSlide
       >Nuestras tierras fueron habitadas en su totalidad. El pacto fue respetado
       a lo largo de los siglos, lo que permitió unaconvivencia pacífica entre
       las distintas civilizaciones. Con similares rasgos, notoria falta de
@@ -39,17 +43,19 @@
       renunciar a su poder absoluto y otorgar a los humanos el libre
       albedrío.Los nuevos humanos, ante esta nueva libertad asumieron como
       propias las diferentes dimensiones, sentimientos ymagnitudes. El amor, el
-      odio y la fe cambiaron completamente su naturaleza. Estas últimas tres
-      fueron las quedieron comienzo a los conflictos transformando a las
-      pacificas civilizaciones en imperios de gran temer. La fe de los humanos
-      les permitió acceder a nuevas deidades de diferentes características y
-      poderes, convirtiendo aldestino en el concepto más poderoso de todos. Cada
-      uno de los imperios intermedió su fe en un símbolo y este significóla
-      razón por la cual vivir. Al cabo de un tiempo, estos nuevos dioses
-      desplazaron a los grandes creadores y hasta el día de hoy se desconoce
-      suparadero. El juramento universal tal como lo conocíamos ya no existe.
-      ¿Estás listo para arriesgar tu fe? Sumérgete en la historia y conviértete
-      en un hijo de los dioses.</ng-template
+      odio y la fe cambiaron completamente su naturaleza.
+    </ng-template>
+    <ng-template swiperSlide
+      >Estas últimas tres fueron las quedieron comienzo a los conflictos
+      transformando a las pacificas civilizaciones en imperios de gran temer. La
+      fe de los humanos les permitió acceder a nuevas deidades de diferentes
+      características y poderes, convirtiendo aldestino en el concepto más
+      poderoso de todos. Cada uno de los imperios intermedió su fe en un símbolo
+      y este significóla razón por la cual vivir. Al cabo de un tiempo, estos
+      nuevos dioses desplazaron a los grandes creadores y hasta el día de hoy se
+      desconoce suparadero. El juramento universal tal como lo conocíamos ya no
+      existe. ¿Estás listo para arriesgar tu fe? Sumérgete en la historia y
+      conviértete en un hijo de los dioses.</ng-template
     >
   </swiper>
 
