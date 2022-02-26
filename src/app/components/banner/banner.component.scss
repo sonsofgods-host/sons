@@ -1,3 +1,7 @@
+.banner_container {
+  width: 100%;
+}
+
 .mat-grid-tile {
   width: 100%;
 }
@@ -6,18 +10,11 @@
   width: 100%;
 }
 
-.logoBanner img {
+.banner_container img {
   height: auto;
   margin-top: 100px;
-  width: 100%;
-  z-index: 50;
+  width: 100% !important;
   z-index: -10;
-  width:1748px;
-  border: solid rgba(#000, 0.2);
-}
-
-.logoBanner {
-  z-index: 0;
 }
 
 .row {
@@ -26,6 +23,11 @@
 }
 
 .timeCounter {
-  z-index: 1000000000;
-  transform: translatex(650px) translatey(-300px);
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -350px;
+  z-index: 50;
 }
