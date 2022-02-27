@@ -21,6 +21,8 @@
     "@angular/platform-browser": "~13.2.3",
     "@angular/platform-browser-dynamic": "~13.2.3",
     "@angular/router": "~13.2.3",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
     "@syncfusion/ej2-angular-buttons": "^19.4.52",
     "@types/gsap": "^3.0.0",
     "all": "^0.0.0",

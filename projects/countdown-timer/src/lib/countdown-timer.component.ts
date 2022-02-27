@@ -5,10 +5,10 @@ import { map } from 'rxjs/internal/operators/map';
 @Component({
   selector: 'ctimer-countdown-timer',
   template: `<div id="timer">
-  <div>{{ time.days }} <span>Días</span></div>
-  <div>{{ time.hours }} <span>Horas</span></div>
-  <div>{{ time.minutes }} <span>Minutos</span></div>
-  <div>{{ time.seconds }} <span>Segundos</span></div>
+  <div>{{ time.days }} <span>Days</span></div>
+  <div>{{ time.hours }} <span>Hours</span></div>
+  <div>{{ time.minutes }} <span>Minutes</span></div>
+  <div>{{ time.seconds }} <span>Seconds</span></div>
   </div>`,
   styles: [`#timer {
     font-size: 3em;

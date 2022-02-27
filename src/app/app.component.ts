@@ -8,6 +8,7 @@ import {
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { DOCUMENT } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +17,6 @@ gsap.registerPlugin(ScrollTrigger);
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-
 export class AppComponent implements OnInit {
   title = 'Sons of Gods';
 
@@ -37,7 +37,10 @@ export class AppComponent implements OnInit {
 
   isShowing = true;
 
-  constructor(@Inject(DOCUMENT) private document: Document) {
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private translateService: TranslateService
+  ) {
     // LOADER SECCION //
     setTimeout(() => {
       let element = document.getElementById('loader_div');
@@ -62,6 +65,9 @@ export class AppComponent implements OnInit {
     }, 2200);
 
     // END LOADER SECCION //
+
+    translateService.setDefaultLang('en');
+    translateService.use(localStorage.getItem('lang') || 'en');
   }
 
   // SCROLL SECTION //
