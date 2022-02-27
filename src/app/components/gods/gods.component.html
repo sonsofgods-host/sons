@@ -1,0 +1,34 @@
+<div class="gods_master_container">
+  <div class="title">{{'gods' | translate}}</div>
+  <swiper
+    [slidesPerView]="3"
+    [spaceBetween]="30"
+    [freeMode]="true"
+    [zoom]="true"
+    [pagination]="{
+      clickable: true
+    }"
+    class="mySwiper"
+  >
+    <ng-template swiperSlide>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/hdri1.jpeg" />
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/hdri4.jpeg" />
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/hdri2.jpeg" />
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/hdri3.jpeg" />
+      </div>
+    </ng-template>
+  </swiper>
+</div>

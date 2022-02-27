@@ -1,41 +1,44 @@
-<br>
-<br>
-<br>
-
-
-<swiper [slidesPerView]="3" [spaceBetween]="30" [freeMode]="true" [zoom]="true" [pagination]="{
+<div class="gallery_master_container" #secondSection>
+    <h2 class="title">{{'meet the sons' | translate}}</h2>
+  <swiper
+    [slidesPerView]="3"
+    [spaceBetween]="30"
+    [freeMode]="true"
+    [zoom]="true"
+    [pagination]="{
       clickable: true
-    }" class="mySwiper">
+    }"
+    class="mySwiper"
+  >
     <ng-template swiperSlide>
-        <div class="swiper-zoom-container">
-            <img src="../../../assets/galeria1.jpg" />
-        </div>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/galeria1.jpg" />
+      </div>
     </ng-template>
     <ng-template swiperSlide>
-        <div class="swiper-zoom-container">
-            <img src="../../../assets/galaeria2.jpg" />
-        </div>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/galaeria2.jpg" />
+      </div>
     </ng-template>
     <ng-template swiperSlide>
-
-        <div class="swiper-zoom-container">
-            <img src="../../../assets/galeria3.jpg" />
-        </div>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/galeria3.jpg" />
+      </div>
     </ng-template>
     <ng-template swiperSlide>
-        <div class="swiper-zoom-container">
-            <img src="../../../assets/galeria4.jpg" />
-        </div>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/galeria4.jpg" />
+      </div>
     </ng-template>
     <ng-template swiperSlide>
-
-        <div class="swiper-zoom-container">
-            <img src="../../../assets/galeria5.jpg" />
-        </div>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/galeria5.jpg" />
+      </div>
     </ng-template>
     <ng-template swiperSlide>
-        <div class="swiper-zoom-container">
-            <img src="../../../assets/galeria6.jpg" />
-        </div>
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/galeria6.jpg" />
+      </div>
     </ng-template>
-</swiper>
+  </swiper>
+</div>

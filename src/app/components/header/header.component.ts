@@ -1,14 +1,33 @@
+import { ResourceLoader } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
+export class HeaderComponent implements OnInit {
+  lang: string = 'en';
+  selectedLang = localStorage.getItem('lang');
 
+  changeLenguage() {
+    if (localStorage.getItem('lang') == 'en') {
+      localStorage.setItem('lang', 'es');
+      this.selectedLang = 'es';
 
-export class HeaderComponent implements OnInit { 
+      window.location.reload();
+    } else {
+      if (localStorage.getItem('lang') == 'es') {
+        localStorage.setItem('lang', 'en');
+        this.selectedLang = 'en';
+
+        window.location.reload();
+      }
+    }
+  }
 
   constructor() {}
-  ngOnInit() {}
+  ngOnInit() {
+    this.lang = localStorage.getItem('lang') || 'en';
+  }
 }

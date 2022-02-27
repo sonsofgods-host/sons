@@ -20,7 +20,7 @@ export class LoreComponent {
     {
       title: 'Sons of gods Lore',
       link: "../../../assets/lore.wav",
-      artist: 'Audio One Artist',
+      artist: 'Suprem god',
       duration: 100
     }
   ];
