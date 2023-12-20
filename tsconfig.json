@@ -5,8 +5,8 @@
     "baseUrl": "./",
     "paths": {
       "countdown-timer": [
-        "dist/countdown-timer/countdown-timer",
-        "dist/countdown-timer"
+        "docs/countdown-timer/countdown-timer",
+        "docs/countdown-timer"
       ]
     },
     "outDir": "./dist/out-tsc",
