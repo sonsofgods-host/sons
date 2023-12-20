@@ -19,7 +19,7 @@ export class LoreComponent {
   msaapPlaylist: Track[] = [
     {
       title: 'Sons of gods Lore',
-      link: "../../../assets/lore.wav",
+      link: "assets/lore.wav",
       artist: 'Suprem god',
       duration: 100
     }
