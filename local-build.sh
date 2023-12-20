@@ -7,7 +7,7 @@
 cd src
 
 # Instalar dependencias
-npm install
+npm install --force
 
 # Construir la aplicación
 ng build
